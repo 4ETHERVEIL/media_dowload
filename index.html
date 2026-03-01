@@ -3,89 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEDIA DOWNLOADER ULTRA</title>
+    <title>SANN404 • MEDIA DOWNLOADER ULTRA</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&family=Space+Grotesk:wght@300;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;800&family=Space+Grotesk:wght@300;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Background Effects -->
     <div class="bg-noise"></div>
     <div class="floating-shape shape-1"></div>
     <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
 
+    <!-- Top Marquee -->
     <div class="marquee-top">
         <div class="marquee-content">
-            SYSTEM READY • V.3.0 ULTRA • NO WATERMARK • FAST SPEED • SECURE • SANN404 • SYSTEM READY • V.3.0 ULTRA • NO WATERMARK •
+            <span>⚡ SYSTEM ONLINE • V.3.0 ULTRA • NO WATERMARK • FAST SPEED • SECURE • SANN404 • FREE DOWNLOAD • 24/7 ACTIVE • ⚡</span>
+            <span>⚡ SYSTEM ONLINE • V.3.0 ULTRA • NO WATERMARK • FAST SPEED • SECURE • SANN404 • FREE DOWNLOAD • 24/7 ACTIVE • ⚡</span>
         </div>
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="brand-container">
-            <div class="brand-glitch" data-text="MD-ULTRA">MediaDownloader</div>
+            <div class="brand-glitch" data-text="SANN404">SANN404</div>
+            <div class="version-badge">v3.0</div>
         </div>
-       
-        <a href="docs.html" class="nav-btn">BACA YA INI</a>
+        
+        <div class="nav-right">
+            <div class="status-badge">
+                <span class="dot"></span>
+                <span class="status-text">API READY</span>
+            </div>
+            <a href="docs.html" class="nav-btn">
+                <i class="fas fa-book"></i>
+                <span>DOCS</span>
+            </a>
+        </div>
     </nav>
 
+    <!-- Main Container -->
     <div class="container">
         
+        <!-- Main Card -->
         <div class="cyber-card main-card">
-            <div class="screw top-left">+</div>
-            <div class="screw top-right">+</div>
-            <div class="screw bottom-left">+</div>
-            <div class="screw bottom-right">+</div>
+            <div class="screw top-left">⦿</div>
+            <div class="screw top-right">⦿</div>
+            <div class="screw bottom-left">⦿</div>
+            <div class="screw bottom-right">⦿</div>
 
+            <!-- Card Header with Profile -->
             <div class="card-header-visual">
                 <div class="profile-section">
-                    <img src="63985eb0b043dbf2bcdc175f50acb386.jpg" alt="User Profile" class="avatar-img" id="userAvatar">
+                    <div class="avatar-frame">
+                        <img src="63985eb0b043dbf2bcdc175f50acb386.jpg" alt="SANN404" class="avatar-img" id="userAvatar">
+                        <div class="avatar-glow"></div>
+                    </div>
                     <div class="profile-info">
-                        <span class="user-role">ADMINISTRATOR</span>
-                        <span class="user-action">PASTE YOUR LINK BELOW</span>
+                        <span class="user-role">
+                            <i class="fas fa-crown"></i>
+                            ADMINISTRATOR
+                        </span>
+                        <span class="user-action">// PASTE YOUR LINK //</span>
                     </div>
                 </div>
-                <div class="decor-lines">///</div>
+                <div class="decor-lines">
+                    <span class="line-1">///</span>
+                    <span class="line-2">\\\\\\</span>
+                </div>
             </div>
             
+            <!-- Card Body -->
             <div class="card-body">
+                <!-- URL Input -->
                 <div class="input-wrapper">
-                    <div class="input-label">TARGET URL:</div>
-                    <input type="text" id="urlInput" class="cyber-input" placeholder="https://tiktok.com/..." autocomplete="off">
-                    <div class="input-focus-border"></div>
+                    <div class="input-label">
+                        <i class="fas fa-link"></i>
+                        TARGET URL:
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="urlInput" class="cyber-input" 
+                               placeholder="https://tiktok.com/@user/video/123..." 
+                               autocomplete="off">
+                        <div class="input-focus-border"></div>
+                    </div>
                 </div>
 
+                <!-- Platform Tags -->
                 <div class="platform-tags">
-                    <span>#TIKTOK</span> <span>#IG</span> <span>#YT</span> <span>#FB</span> <span>#X</span>
+                    <span class="tag"><i class="fab fa-tiktok"></i> TIKTOK</span>
+                    <span class="tag"><i class="fab fa-instagram"></i> IG</span>
+                    <span class="tag"><i class="fab fa-youtube"></i> YT</span>
+                    <span class="tag"><i class="fab fa-facebook"></i> FB</span>
+                    <span class="tag"><i class="fab fa-x-twitter"></i> X</span>
+                    <span class="tag"><i class="fas fa-globe"></i> MORE</span>
                 </div>
                 
+                <!-- Download Button -->
                 <button id="downloadBtn" onclick="fetchMedia()" class="cyber-button">
+                    <span class="btn-icon"><i class="fas fa-download"></i></span>
                     <span class="btn-text">INITIATE DOWNLOAD</span>
                     <span class="btn-glare"></span>
                 </button>
+
+                <!-- Quick Tips -->
+                <div class="quick-tips">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Support: TikTok, IG, YT, FB, Twitter (X)</span>
+                </div>
             </div>
         </div>
 
-        <div id="loading" class="cyber-card hidden" style="text-align: center; padding: 40px;">
-            <div class="scanner"></div>
-            <p class="blink-text">PROCESSING DATA STREAM...</p>
+        <!-- Loading State -->
+        <div id="loading" class="cyber-card hidden">
+            <div class="loading-content">
+                <div class="scanner"></div>
+                <div class="loading-text">
+                    <span class="blink-text">PROCESSING DATA STREAM...</span>
+                    <span class="loading-dots"></span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
         </div>
 
+        <!-- Error Card -->
         <div id="error-msg" class="cyber-card error-state hidden">
-            <div class="error-header">SYSTEM ERROR</div>
+            <div class="error-header">
+                <i class="fas fa-exclamation-triangle"></i>
+                SYSTEM ERROR
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
             <div class="error-body" id="error-text"></div>
+            <button class="error-dismiss" onclick="dismissError()">
+                <i class="fas fa-times"></i> DISMISS
+            </button>
         </div>
 
+        <!-- Results Container -->
         <div id="result" class="result-stack"></div>
 
+        <!-- Stats Counter -->
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-value" id="downloadCount">0</span>
+                <span class="stat-label">DOWNLOADS</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="activeUsers">128</span>
+                <span class="stat-label">ACTIVE</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="uptime">99.9%</span>
+                <span class="stat-label">UPTIME</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
         <footer class="sann-footer">
             <div class="footer-line"></div>
-            <p>POWERED BY <span class="sann-highlight">SANN404 FORUM</span></p>
-            <p style="font-size: 0.7rem; opacity: 0.6;">ENGINEERED FOR PERFORMANCE</p>
+            <div class="footer-content">
+                <p class="powered-by">
+                    <i class="fas fa-bolt"></i>
+                    POWERED BY <span class="sann-highlight">SANN404 FORUM</span>
+                    <i class="fas fa-bolt"></i>
+                </p>
+                <p class="engineer-tag">ENGINEERED FOR MAXIMUM PERFORMANCE</p>
+                <p class="copyright">© 2024 • MEDIA DOWNLOADER ULTRA • ALL RIGHTS RESERVED</p>
+            </div>
         </footer>
 
     </div>
 
+    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>
