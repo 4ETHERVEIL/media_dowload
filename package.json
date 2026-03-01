@@ -1,0 +1,16 @@
+{
+  "name": "media-downloader-api",
+  "version": "3.0.0",
+  "description": "Media Downloader API for Vercel - No RapidAPI",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
